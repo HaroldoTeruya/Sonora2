@@ -1,0 +1,143 @@
+.l-diamonds
+  list-style: none
+  margin: 0
+  padding: 0
+  font-size: 0
+  margin: 40px auto
+  padding-top: 40px
+  > li
+    display: inline-block
+    font-size: 18px
+    margin-right: 80px
+  .diamond
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+    color: #000
+    display: block
+    height: 190px
+    overflow: hidden
+    -webkit-perspective: 1000
+    perspective: 1000
+    position: relative
+    text-decoration: none
+    width: 190px
+    overflow: hidden
+    -webkit-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+  .diamond__content
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    width: 270px
+    height: 270px
+    padding: 0
+    -webkit-transform: rotate(45deg)
+    transform: rotate(45deg)
+    -webkit-transform-origin: 60% 25% 0
+    transform-origin: 60% 25% 0
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    text-align: center
+    vertical-align: center
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background-color: rgba(0, 0, 0, 0)
+      -webkit-transition: 0.4s ease
+      transition: 0.4s ease
+    &:hover
+      &::before
+        background-color: rgba(0, 0, 0, 0.7)
+      .diamond__title, .diamond__subtitle
+        opacity: 1
+        -webkit-transition: opacity 2s ease
+        transition: opacity 2s ease
+  .diamond__title
+    position: absolute
+    opacity: 0
+    color: white
+    top: 90px
+  .diamond__subtitle
+    position: absolute
+    opacity: 0
+    color: white
+    top: 146px
+
+@media only screen and (max-width: 537px)
+  .l-diamonds
+    margin: 0 auto
+
+@media only screen and (min-width: 1348px)
+  .l-diamonds
+    max-width: 1270px
+    > li
+      &:nth-child(9n + 6)
+        margin-left: 135px
+      &:nth-child(9n + 5)
+        margin-right: 0
+      &:nth-child(n + 5)
+        margin-top: -55px
+
+@media only screen and (max-width: 1347px) and (min-width: 1078px)
+  .l-diamonds
+    max-width: 1000px
+    > li
+      &:nth-child(7n + 5)
+        margin-left: 135px
+      &:nth-child(7n + 4)
+        margin-right: 0
+      &:nth-child(n + 4)
+        margin-top: -55px
+
+@media only screen and (max-width: 1077px) and (min-width: 808px)
+  .l-diamonds
+    max-width: 730px
+    > li
+      &:nth-child(5n + 4)
+        margin-left: 135px
+      &:nth-child(5n + 3)
+        margin-right: 0
+      &:nth-child(n + 3)
+        margin-top: -55px
+
+@media only screen and (max-width: 807px) and (min-width: 538px)
+  .l-diamonds
+    max-width: 460px
+    > li
+      &:nth-child(3n + 3)
+        margin-left: 135px
+      &:nth-child(3n + 2)
+        margin-right: 0
+      &:nth-child(n + 2)
+        margin-top: -55px
+
+@media only screen and (max-width: 537px)
+  .l-diamonds
+    text-align: center
+
+@media only screen and (max-width: 537px)
+  .l-diamonds > li
+    margin: 6px
+    width: 220px
+
+@media only screen and (max-width: 537px)
+  .l-diamonds .diamond
+    height: 220px
+    -webkit-transform: rotate(0)
+    transform: rotate(0)
+    width: 220px
+
+@media only screen and (max-width: 537px)
+  .l-diamonds .diamond__content
+    height: 220px
+    -webkit-transform: rotate(0)
+    transform: rotate(0)
+    width: 220px
