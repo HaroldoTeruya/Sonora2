@@ -16,6 +16,17 @@
     .navbar .navbar-brand img {
       height: 40px;
       width: auto; }
+    .navbar .navbar-brand .phone {
+      color: white;
+      font-size: 12px; }
+      .navbar .navbar-brand .phone img {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-left: 10px; }
+  .navbar button.navbar-toggle {
+    border: 1px solid white; }
+    .navbar button.navbar-toggle span {
+      background-color: white; }
 
 .container-title {
   color: white;
@@ -105,6 +116,10 @@
   .container-product img {
     width: 100%;
     height: auto; }
+
+.container-video iframe {
+  width: 100%;
+  height: 55.2vw; }
 
 .l-diamonds {
   list-style: none;
