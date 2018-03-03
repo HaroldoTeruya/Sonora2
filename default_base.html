@@ -24,14 +24,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/image/logo_branco.png" alt="">
-                </a>
+                <div class="navbar-brand" href="#">
+                    <span>
+                        <img class="" src="./assets/image/logo_branco.png" alt="">
+                    </span>
+                    <span class="phone">
+                        <img src="./assets/image/icon_telefone.png"> 18 3223-4947 | 18 99723-5931
+                    </span>
+                </div>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#"><img src="./assets/image/icon_telefone.png"> 18 3223-4947|18 99723-5931</a></li>
-                    <li><a href="#">HOME</a></li>
+                    <li class="active"><a href="#">HOME</a></li>
                     <li><a href="#">VEM AÍ</a></li>
                     <li><a href="#">ACONTECEU AQUI</a></li>
 
@@ -50,67 +54,22 @@
         </div>
     </nav>
 
-    <!-- video -->
-    <div class="jumbotron">
-        <div class="container text-center">
-            <h1>My Portfolio</h1>
-            <span>Some text that represents "Me"...</span>
-        </div>
+    <!-- banner -->
+    <div class="container-deafult-banner" style="background-image: url('./assets/image/topo.jpg')">
+        <!-- <div class="">
+
+        </div> -->
+        <img src="./assets/image/logo_branco.png" alt="">
     </div>
 
-    <!-- ========================================================================= -->
-    <!-- ========================================================================= -->
 
-    <!-- structure -->
-    <div class="container-title">
-        <div class="separator"></div>
-        <h1>ESTRUTURA</h1>
-        <br>
-        <h4>Nossa estrutura é totalmente adaptada e preparada para melhor desempenho e aprendizado dos alunos.</h4>
-    </div>
-    <div class="container container-structure bg-3 text-center">
-        <div class="container container-video">
-            <iframe src="https://www.youtube.com/embed/QcHyEWQbd90?rel=0&amp" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-1">
-                <a data-toggle="modal" data-target="#gallery-modal" href="#galley" data-slide-to="0">
-                    <img src="https://placehold.it/300x300" alt="">
-                </a>
-            </div>
-            <div class="col-sm-1">
-                <a data-toggle="modal" data-target="#gallery-modal" href="#galley" data-slide-to="1">
-                    <img src="https://placehold.it/300x300" alt="">
-                </a>
-            </div>
-            <div class="col-sm-1">
-                <a data-toggle="modal" data-target="#gallery-modal" href="#galley" data-slide-to="2">
-                    <img src="https://placehold.it/300x300" alt="">
-                </a>
-            </div>
-            <div class="col-sm-1">
-                <a data-toggle="modal" data-target="#gallery-modal" href="#galley" data-slide-to="3">
-                    <img src="https://placehold.it/300x300" alt="">
-                </a>
-            </div>
-            <div class="col-sm-1">
-                <a data-toggle="modal" data-target="#gallery-modal" href="#galley" data-slide-to="4">
-                    <img src="https://placehold.it/300x300" alt="">
-                </a>
-            </div>
-            <div class="col-sm-1">
-                <a data-toggle="modal" data-target="#gallery-modal" href="#galley" data-slide-to="5">
-                    <img src="https://placehold.it/300x300" alt="">
-                </a>
-            </div>
-        </div>
-        <br>
-        <button type="button" name="button">CONFIRAM NOSSAS INSTALAÇÕES, MATRICULE-SE VOCÊ TAMBÉM!</button>
-    </div>
+    <!-- =========================================================================================== -->
+    <!-- =========================================================================================== -->
 
-    <!-- ========================================================================= -->
-    <!-- ========================================================================= -->
+    <!-- HERE IS THE CONTENT OF THE PAGE -->
+
+    <!-- =========================================================================================== -->
+    <!-- =========================================================================================== -->
 
     <!-- contact -->
     <div class="separator"></div>
@@ -132,7 +91,7 @@
                         <input type="" name="" value="" placeholder="Nome"><br>
                         <input type="" name="" value="" placeholder="E-mail"><br>
                         <input type="" name="" value="" placeholder="Telefone"><br>
-                        <input type="" name="" value="" placeholder="Mensagem"><br>
+                        <textarea type="" name="" value="" rows="5" placeholder="Mensagem"></textarea><br>
                         <button type="button" name="button">Enviar</button>
                     </form>
                 </div>
@@ -141,7 +100,7 @@
     </div>
 
     <!-- partners -->
-    <div class="container-partners bg-3 text-center">
+    <div class="container-partners bg-3 text-center" style="background-image: url('./assets/image/barra.jpg')">
 
     </div>
 
@@ -178,6 +137,7 @@
     <div class="modal-body">
     <div id="galley" class="carousel slide" data-interval="false">
         <div class="carousel-inner">
+
             <div class="item active">
                 <img src="https://placehold.it/600x400" alt="item0">
                 <div class="carousel-caption">

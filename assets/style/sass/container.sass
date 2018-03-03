@@ -9,7 +9,7 @@ $default-separator-margin: 80px
         background-color: white
         height: 18px
         width: 200px
-    h1, .separator
+    h1, .separator, h4
         margin: auto
         text-align: center
     h1
@@ -20,9 +20,12 @@ $default-separator-margin: 80px
     color: white
     margin-left: $default-container-margin
     margin-right: $default-container-margin
-    input
-        width: 100%
-        margin-bottom: 5px
+    form
+        color: black
+        input, textarea
+            width: 100%
+            margin-bottom: 5px
+
 
 .course-image
     width: 220px
@@ -48,11 +51,23 @@ $default-separator-margin: 80px
 
 .container-partners
     margin-top: $default-separator-margin
-    background-image: url("../image/barra.jpg")
+.container-partners, .container-deafult-banner
     background-repeat: no-repeat
     background-size: cover
+    background-position: center
     width: 100%
     height: 300px
+.container-deafult-banner
+    position: relative
+    img
+        max-height: 90%
+        max-width: 90%
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
 
 .container-coming
     .event
@@ -71,7 +86,6 @@ $default-separator-margin: 80px
         margin-bottom: $default-separator-margin
 
 .container-structure
-    color: white
     button
         margin-top: $default-container-margin
         margin-bottom: $default-container-margin
@@ -79,8 +93,16 @@ $default-separator-margin: 80px
         width: 100%
         height: auto
 
-.container-course
+.container-course, .container-structure
     color: white
+    .container-video
+        iframe
+            width: 70%
+            height: 40.2vw
+            margin-bottom: $default-separator-margin
+        @media only screen and (max-width: 470px)
+            iframe
+                width: 100%
 
 .container-product
     background-color: white
@@ -90,6 +112,8 @@ $default-separator-margin: 80px
     img
         width: 100%
         height: auto
+
+
 
 .container-video
     iframe

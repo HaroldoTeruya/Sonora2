@@ -36,7 +36,7 @@
     background-color: white;
     height: 18px;
     width: 200px; }
-  .container-title h1, .container-title .separator {
+  .container-title h1, .container-title .separator, .container-title h4 {
     margin: auto;
     text-align: center; }
   .container-title h1 {
@@ -47,9 +47,11 @@
   color: white;
   margin-left: 40px;
   margin-right: 40px; }
-  .container-contact input {
-    width: 100%;
-    margin-bottom: 5px; }
+  .container-contact form {
+    color: black; }
+    .container-contact form input, .container-contact form textarea {
+      width: 100%;
+      margin-bottom: 5px; }
 
 .course-image {
   width: 220px;
@@ -74,12 +76,26 @@
     margin-bottom: 40px; }
 
 .container-partners {
-  margin-top: 80px;
-  background-image: url("../image/barra.jpg");
+  margin-top: 80px; }
+
+.container-partners, .container-deafult-banner {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 300px; }
+
+.container-deafult-banner {
+  position: relative; }
+  .container-deafult-banner img {
+    max-height: 90%;
+    max-width: 90%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
 
 .container-coming .event {
   color: white;
@@ -96,17 +112,22 @@
   .container-happened .col-md-4, .container-happened .col-sm-3 {
     margin-bottom: 80px; }
 
-.container-structure {
-  color: white; }
-  .container-structure button {
-    margin-top: 40px;
-    margin-bottom: 40px; }
-  .container-structure img {
-    width: 100%;
-    height: auto; }
+.container-structure button {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+.container-structure img {
+  width: 100%;
+  height: auto; }
 
-.container-course {
+.container-course, .container-structure {
   color: white; }
+  .container-course .container-video iframe, .container-structure .container-video iframe {
+    width: 70%;
+    height: 40.2vw;
+    margin-bottom: 80px; }
+  @media only screen and (max-width: 470px) {
+    .container-course .container-video iframe, .container-structure .container-video iframe {
+      width: 100%; } }
 
 .container-product {
   background-color: white;
