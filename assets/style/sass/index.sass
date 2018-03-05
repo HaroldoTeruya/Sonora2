@@ -1,18 +1,42 @@
 $background-color: #0e0e0f
 $primary-color: #171b33
 
+$default-navbar-color: #181A33
+$active-navbar-color: #0C0D18
+
+// @font-face
+//     font-family: "bebas"
+//     src: url('../font/HelveticaCdLt.ttf')
+
+// @font-face
+//     font-family: "helvetic-lt"
+//     src: url('../font/HelveticaCdLt.ttf')
+
+// $font-family-helvetic-med: 'HelveticaCdMed', sans-serif
+// @font-face
+//     font-family: 'HelveticaCdMed'
+//     src: url('../font/HelveticaCdMed.ttf') format('truetype')
+
 @import navbar
 @import container
 @import diamond_grid
+@import course_modal
+@import button
+// @import course_modal
 @import footer
 
 *
-  -webkit-box-sizing: border-box
-  box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
 
 body
     background-color: $background-color !important
     color: white
+
+button:focus, a:focus
+    outline: 0
+a
+    text-decoration: none !important
 
 .separator
     width: 100%
