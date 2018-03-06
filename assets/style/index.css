@@ -272,10 +272,11 @@
     -webkit-transform: rotate(0);
     transform: rotate(0);
     width: 220px; } }
-.course-modal .modal-backdrop.in {
-  filter: alpha(opacity=70);
-  opacity: 0.7; }
-.course-modal .modal-content {
+.modal-backdrop.in {
+  filter: alpha(opacity=70) !important;
+  opacity: 0.7 !important; }
+
+.course-modal .modal-dialog .modal-content {
   position: relative;
   background-color: transparent;
   -webkit-background-clip: padding-box;
@@ -285,6 +286,54 @@
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none; }
+  .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-inner {
+    height: 80vh; }
+    .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-inner .item {
+      height: 80vh;
+      margin-top: 40px; }
+      .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-inner .item .diamond {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        color: #000;
+        display: block;
+        overflow: hidden;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+        position: relative;
+        text-decoration: none;
+        height: 190px;
+        width: 190px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden; }
+        .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-inner .item .diamond .diamond-content {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 270px;
+          height: 270px;
+          padding: 0;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          -webkit-transform-origin: 60% 25% 0;
+          transform-origin: 60% 25% 0;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          text-align: center;
+          vertical-align: center;
+          text-align: center; }
+          .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-inner .item .diamond .diamond-content img {
+            width: 270px;
+            height: 270px; }
+  .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-control.left, .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-control.right {
+    background-image: none;
+    background-repeat: none; }
 
 .default-button {
   margin-top: 15px;
@@ -297,6 +346,69 @@
   color: white; }
   .default-button:hover, .default-button:active, .default-button:focus {
     background-color: lightgray !important; }
+
+.modal-backdrop.in {
+  filter: alpha(opacity=70) !important;
+  opacity: 0.7 !important; }
+
+.course-modal .modal-dialog .modal-content {
+  position: relative;
+  background-color: transparent;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-inner {
+    height: 80vh; }
+    .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-inner .item {
+      height: 80vh;
+      margin-top: 40px; }
+      .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-inner .item .diamond {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        color: #000;
+        display: block;
+        overflow: hidden;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+        position: relative;
+        text-decoration: none;
+        height: 190px;
+        width: 190px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden; }
+        .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-inner .item .diamond .diamond-content {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 270px;
+          height: 270px;
+          padding: 0;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          -webkit-transform-origin: 60% 25% 0;
+          transform-origin: 60% 25% 0;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          text-align: center;
+          vertical-align: center;
+          text-align: center; }
+          .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-inner .item .diamond .diamond-content img {
+            width: 270px;
+            height: 270px; }
+  .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-control.left, .course-modal .modal-dialog .modal-content .modal-body .carousel .carousel-control.right {
+    background-image: none;
+    background-repeat: none; }
 
 footer {
   background-color: #f2f2f2;
