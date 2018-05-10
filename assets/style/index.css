@@ -57,18 +57,11 @@
       margin-bottom: 5px; }
 
 .course-wrapper {
-  margin-left: 120px !important; }
-  @media only screen and (max-width: 509px) {
-    .course-wrapper {
-      margin-left: auto !important;
-      margin-right: auto !important;
-      text-align: center; }
-      .course-wrapper .course-image {
-        float: none !important;
-        margin-left: auto !important;
-        margin-right: auto !important; } }
+  text-align: center;
+  margin-left: 30px !important;
+  margin-right: 30px !important; }
   .course-wrapper .course-image {
-    float: left;
+    display: inline-block;
     width: 220px;
     height: 220px;
     margin-left: -40px;
